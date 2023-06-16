@@ -12,9 +12,21 @@ public class JornadaDoDestino {
         System.out.println("Seguir o caminho da neblina");
         System.out.println("Seguir o caminho da luz");
         System.out.println("Seguir o caminho da sabedoria");
-        System.out.println("Escolha entre os caminhos Neblina, Luz, Sabedoria");
 
-        String escolha = scanner.nextLine();
+        String escolha = "";
+        boolean escolhacerta = false;
+
+        while(!escolhacerta){
+             System.out.println("Escolha entre os caminhos Neblina, Luz, Sabedoria");
+            escolha = scanner.nextLine();
+
+            if (escolha.equalsIgnoreCase("Neblina") || escolha.equalsIgnoreCase("Luz")
+                    || escolha.equalsIgnoreCase("Sabedoria")) {
+                escolhacerta = true;
+            }else{
+                 System.out.println("Opção inválida. Por favor, escolha novamente.");
+
+            }
 
         if (escolha.equalsIgnoreCase("Neblina")) {
             mensagem1();
@@ -22,44 +34,66 @@ public class JornadaDoDestino {
             String escolha1 = scanner.nextLine();
 
             if(escolha1.equalsIgnoreCase("Pegar tesouro")) {
-                mensagem11();
-                final11();
+                mensagem21();
+                final21();
 
             }else if(escolha1.equalsIgnoreCase("Procurar mais")){
-                escolha12();
-                final12();
+                escolha22();
+                final22();
             }} 
 
-         else if (escolha.equalsIgnoreCase("2")) {
+         else if (escolha.equalsIgnoreCase("luz")) {
             escolha2();
-            System.out.println("Agora voce tem novas escolhas, escolha: Pegar tesouro ou Procurar mais\n");
+            System.out.println("Agora voce tem novas escolhas, escolha: Compartilhar a sabedoria ou desejos pessoais\n");
             String escolha2 = scanner.nextLine();
-            if(escolha2.equalsIgnoreCase("1")) {
-                mensagem11();
-                final11();
+            if(escolha2.equalsIgnoreCase("Compartilhar a sabedoria")) {
+                mensagemluz1();
+                finalluz1();
 
-            }else if(escolha2.equalsIgnoreCase("2")){
-                escolha12();
-                final12();
+            }else if(escolha2.equalsIgnoreCase("desejos pessoais")){
+                mensagem22();
+                final22();
             //a continuação da opção 2 aqui
-        } }else if (escolha.equalsIgnoreCase("3")) {
+        } }else if (escolha.equalsIgnoreCase("sabedoria")) {
             escolha3();
+            System.out.println("Agora voce tem novas escolhas, escolha: Utilizar o poder, Renunciar ao poder ou Destruir o poder\n");
             String escolha3 = scanner.nextLine();
-            if(escolha3.equalsIgnoreCase("1")) {
+            if(escolha3.equalsIgnoreCase("Utilizar o poder")) {
                 mensagem31();
                 final31();
 
             //a continuação da opção 3 aqui
-        } else if(escolha3.equalsIgnoreCase("2")) {
+        } else if(escolha3.equalsIgnoreCase("Renunciar ao poder")) {
             mensagem32();
             final32();
-        } else if(escolha3.equalsIgnoreCase("3")){
+        } else if(escolha3.equalsIgnoreCase("Destruir o poder")){
             mensagem33();
             final33();
 
         }
 
-        scanner.close();}}
+        scanner.close();}}}
+
+
+    private static void finalluz1() {
+        System.out.println("Final: herói da humanidade");
+    }
+
+
+    private static void mensagemluz1() {
+        System.out.println("Voc\u00EA decide usar o poder do \"Olho de Or\u00E1culo\" para realizar um desejo pessoal ego\u00EDsta. No entanto, o poder corrompe sua mente e cora\u00E7\u00E3o, levando voc\u00EA a um caminho de isolamento e tristeza.\n" + //
+                "");
+    }
+
+
+    private static void mensagem22() {
+        mensagemluz1();
+    }
+
+
+    private static void final22() {
+        finalluz1();
+    }
     
 
     private static void mensagempricipal() {
@@ -99,7 +133,7 @@ public class JornadaDoDestino {
     }
 
     private static void mensagem31() {
-        System.out.println("Utilizar o poder com sabedoria Você encontra o "+"Olho de Oráculo"+" e usa seu poder com sabedoria, buscando um equilíbrio entre a luz e a neblina. Compreendendo que o poder da relíquia é uma responsabilidade, você toma decisões cuidadosas e usa seus poderes para ajudar aqueles ao seu redor.")
+        System.out.println("\nUtilizar o poder com sabedoria Você encontra o "+"Olho de Oráculo"+" e usa seu poder com sabedoria, buscando um equilíbrio entre a luz e a neblina. Compreendendo que o poder da relíquia é uma responsabilidade, você toma decisões cuidadosas e usa seus poderes para ajudar aqueles ao seu redor.")
 ;
     }
 
@@ -113,7 +147,7 @@ public class JornadaDoDestino {
     }
 
     private static void escolha2() {
-        System.out.println("Seguir o caminho da luz\n" + //
+        System.out.println("\nSeguir o caminho da luz\n" + //
                 "\n" + //
                 "Voc\u00EA confia na sabedoria dos seres pac\u00EDficos e s\u00E1bios da cidade flutuante. Eles lhe fornecem um mapa que mostra a localiza\u00E7\u00E3o exata do \"Olho de Or\u00E1culo\". Seguindo o mapa, voc\u00EA chega a um templo antigo e enfrenta desafios que testam sua compaix\u00E3o e empatia.\n" + //
                 "\n" + //
@@ -126,18 +160,18 @@ public class JornadaDoDestino {
                 "");
     }
 
-    private static void escolha12() {
+    private static void escolha22() {
         System.out.println("\nProcurar mais a fundo\n" + //
                 "\nVoc\u00EA decide que os tesouros n\u00E3o s\u00E3o suficientes e continua sua busca pelo \"Olho de Or\u00E1culo\". \u00C0 medida que avan\u00E7a, percebe que a escurid\u00E3o come\u00E7a a afetar sua mente e sua moral. Finalmente, voc\u00EA encontra a rel\u00EDquia, mas ao toc\u00E1-la, \u00E9 consumido pela escurid\u00E3o e perde sua humanidade.\n" + //
                 "");
     }
 
-    private static void final11() {
+    private static void final21() {
         System.out.println("Final: Vida confort\u00E1vel, mas incompleta\n" + //
                 "");
     }
 
-    private static void mensagem11() {
+    private static void mensagem21() {
         System.out.println("\nPegar os tesouros e retornar\n" + //
                 "\nVoc\u00EA decide pegar os tesouros e voltar ao mundo exterior. Com sua mochila cheia de riquezas, voc\u00EA retorna \u00E0 superf\u00EDcie e se torna uma lenda entre os aventureiros. Sua riqueza permite que voc\u00EA viva uma vida confort\u00E1vel, mas a busca pelo \"Olho de Or\u00E1culo\" permanece incompleta.\n" + //
                 "");
