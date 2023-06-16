@@ -209,15 +209,15 @@ public class JornadaDoDestino {
         System.out.println("\nPegar os tesouros e retornar\n" + //
                 "\nVocê decide pegar os tesouros e voltar ao mundo exterior. Com sua mochila cheia de riquezas,\n"+ 
                 "você retorna à superperfície e se torna uma lenda entre os aventureiros. Sua riqueza permite que você"+
-                "viva uma vida conforavel,\n"+
+                " viva uma vida conforavel,\n"+
                 "mas a busca pelo Olho de Oráculo permanece incompleta.\n");
     }
 
     private static void mensagem1() {
-        System.out.println("\nSeguir o caminho da eescuridão\n" + 
+        System.out.println("\nSeguir o caminho da escuridão\n" + 
                 "\nVocê decide seguir um caminho sombrio e misterioso que parece levar a um reino subterrâneo."+ 
                 "\nEle é guardado por criaturas assustadoras e perigosas. No entanto, há boatos de que grandes tesouros"+
-                 "estão escondidos lá.\n" +
+                 " estão escondidos lá.\n" +
                  "Você deseja enfrentar os perigos e desafios em busca de riquezas?\n");
     }
 }
