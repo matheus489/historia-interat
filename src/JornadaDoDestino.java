@@ -32,6 +32,7 @@ public class JornadaDoDestino {
         if (escolha.equalsIgnoreCase("Neblina")) {
             mensagem1();
             boolean escolhaCerta1 = false;
+            
             while(!escolhaCerta1){
 
             System.out.println("Agora voce tem novas escolhas, escolha: Pegar tesouro ou Procurar mais\n");
@@ -71,7 +72,7 @@ public class JornadaDoDestino {
 
             }else if(escolha2.equalsIgnoreCase("desejos")){
                 escolhaCerta2 = true;
-                
+
                 desejos1();
                 final_desejo1();}
                 else {
