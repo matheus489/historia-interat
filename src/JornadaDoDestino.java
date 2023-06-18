@@ -15,6 +15,7 @@ public class JornadaDoDestino {
 
         String escolha = "";
         boolean escolhacerta = false;
+        
 
         while(!escolhacerta){
              System.out.println("Escolha entre os caminhos Neblina, Luz, Sabedoria");
