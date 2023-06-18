@@ -200,6 +200,7 @@ public class JornadaDoDestino {
         "À medida que avança, percebe que a escuridão começa a afetar sua mente e sua moral. Finalmente,\n" + 
         "você encontra a relíquias, mas ao toca-la, é consumido pela escuridão e perde sua humanidade.\n");
     }
+    
 
     private static void final_tesouro1() {
         System.out.println("\nFinal: Vida confortavel, mas incompleta\n");
