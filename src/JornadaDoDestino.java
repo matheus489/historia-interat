@@ -103,6 +103,7 @@ public class JornadaDoDestino {
         }else {
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
                 }
+                scanner.close();
 
         }}}
 
