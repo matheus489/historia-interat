@@ -15,7 +15,7 @@ public class JornadaDoDestino {
 
         String escolha = "";
         boolean escolhacerta = false;
-        
+
 
         while(!escolhacerta){
              System.out.println("Escolha entre os caminhos Neblina, Luz, Sabedoria");
@@ -71,6 +71,7 @@ public class JornadaDoDestino {
 
             }else if(escolha2.equalsIgnoreCase("desejos")){
                 escolhaCerta2 = true;
+                
                 desejos1();
                 final_desejo1();}
                 else {
