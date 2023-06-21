@@ -50,8 +50,8 @@ public class JornadaDoDestino {
 
                 tesouro1();
                 final_tesouro1();
-                int pessoaperde = (pessoa + 20);
-                System.out.println("Sua energia é:" + pessoaperde);
+                int pessoa1 = (pessoa + 20);
+                System.out.println("Sua energia é:" + pessoa1);
 
             }else if(escolha1.equalsIgnoreCase("Procurar")){
                 escolhaCerta1 = true;
@@ -72,18 +72,30 @@ public class JornadaDoDestino {
             while(!escolhaCerta2){
 
             System.out.println("Agora voce tem novas escolhas, escolha: Compartilhar a sabedoria ou desejos pessoais\n");
+            System.out.println("Seu nome é:" + persona2.nome);
+            int pessoa = (persona1.energia);
+            pular_linha();
+            System.out.println("Sua energia é:"+ pessoa);
+            pular_linha();
             System.out.println("Digite: Compartilhar ou desejos\n");
             String escolha2 = scanner.nextLine();
 
             if(escolha2.equalsIgnoreCase("Compartilhar")) {
                 escolhaCerta2 = true;
                 sabedoria1();
+                pular_linha();
+                int pessoa2 = (pessoa);
+                System.out.println("Sua energia é:" + pessoa2);
+                pular_linha();
+                System.out.println("Adicional: imortalidade");
                 final_sabedoria1();
 
             }else if(escolha2.equalsIgnoreCase("desejos")){
                 escolhaCerta2 = true;
-
                 desejos1();
+                pular_linha();
+                int pessoa2 = (pessoa - 60);
+                System.out.println("Sua energia é:" + pessoa2);
                 final_desejo1();}
                 else {
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
@@ -121,6 +133,11 @@ public class JornadaDoDestino {
         }}}
 
 
+    private static void pular_linha() {
+        System.out.println();
+    }
+
+
     private static void final_desejo1() {
         System.out.println("\nFinal: Sozinho e corrompido\n");
     }
@@ -137,13 +154,15 @@ public class JornadaDoDestino {
 
 
     private static void sabedoria1() {
-        System.out.println("\nVocê decide usar o poder do olho de Oráculo para realizar um desejo pessoal egoísta\n"+
-         "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza.\n");
+        System.out.println("\nVocê decide usar o poder do Olho de Oráculo para conceder um desejo que beneficie toda a humanidade."+
+        "Sua ação inspira outros a fazerem o mesmo, e você se torna uma figura venerada como o Portador da Luz");
     }
 
 
     private static void desejos1() {
-        sabedoria1();
+        
+        System.out.println("Você decide usar o poder do Olho de Oráculo para realizar um desejo pessoal egoísta.\n"+
+        "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza.");
     }
     
 
