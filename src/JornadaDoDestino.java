@@ -4,6 +4,8 @@ public class JornadaDoDestino {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        personagem persona1 = new personagem("morgan", 100);
+        personagem persona2 = new personagem("Vigario", 100);
         mensagempricipal();
 
         System.out.println("Bem-vindo à Jornada do Destino!");
@@ -31,6 +33,9 @@ public class JornadaDoDestino {
 
         if (escolha.equalsIgnoreCase("Neblina")) {
             mensagem1();
+            System.out.println("Seu nome é:" + persona1.nome);
+            int pessoa = (persona1.energia - 40);
+            System.out.println("Sua energia é:"+ pessoa);
             boolean escolhaCerta1 = false;
 
             while(!escolhaCerta1){
@@ -40,17 +45,21 @@ public class JornadaDoDestino {
             String escolha1 = scanner.nextLine();
 
             if(escolha1.equalsIgnoreCase("tesouro")) {
-                
+                            
                 escolhaCerta1 = true;
 
                 tesouro1();
                 final_tesouro1();
+                int pessoaperde = (pessoa + 20);
+                System.out.println("Sua energia é:" + pessoaperde);
 
             }else if(escolha1.equalsIgnoreCase("Procurar")){
                 escolhaCerta1 = true;
-
+                pessoa = (persona1.energia - 100);
                 procura1();
-                final_procura2();}
+                final_procura2();
+            System.out.println("Sua energia chegou "+ pessoa +", morte imediata.");
+        }
             else {
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
                 }
