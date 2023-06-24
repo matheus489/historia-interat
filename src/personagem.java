@@ -16,5 +16,9 @@ public class personagem {
     public void subtrairEnergia(int quantidade) {
         energia -= quantidade;
     }
-
+    
 }
+
+        
+
+

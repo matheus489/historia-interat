@@ -34,7 +34,7 @@ public class JornadaDoDestino {
 
         if (escolha.equalsIgnoreCase("Neblina")) {
             mensagem1();
-            System.out.println("Seu nome é:" + pessoa1.nome);
+            System.out.println("Seu nome é: " + pessoa1.nome);
             pular_linha();
             pessoa1.subtrairEnergia(40);
             System.out.println("Sua energia é: "+ pessoa1.energia);
@@ -77,7 +77,8 @@ public class JornadaDoDestino {
             boolean escolhaCerta2 = false;
             while(!escolhaCerta2){
 
-            System.out.println("Agora "+ pessoa2.nome +" voce tem novas escolhas, escolha: Compartilhar a sabedoria ou desejos pessoais\n");
+            System.out.println("Agora "+ pessoa2.nome +" voce tem novas escolhas, escolha:"+
+            " Compartilhar a sabedoria ou desejos pessoais\n");
             pular_linha();
             System.out.println("Digite: Compartilhar ou desejos\n");
             String escolha2 = scanner.nextLine();
@@ -111,7 +112,8 @@ public class JornadaDoDestino {
             boolean escolhaCerta3 = false;
             while(!escolhaCerta3){
 
-            System.out.println("Agora " + pessoa3.nome + " tem novas escolhas, escolha: Utilizar, Renunciar ou Destruir o poder\n");
+            System.out.println("Agora " + pessoa3.nome + " tem novas escolhas, escolha: Utilizar,"+
+            " Renunciar ou Destruir o poder\n");
             System.out.println("Digite: Utilizar, Renunciar ou Destruir\n");
             String escolha3 = scanner.nextLine();
 
@@ -170,39 +172,44 @@ public class JornadaDoDestino {
 
 
     private static void sabedoria1(String nome) {
-        System.out.println("\n"+ nome +" decide usar o poder do Olho de Oráculo para conceder um desejo que beneficie toda a humanidade."+
-        "Sua ação inspira outros a fazerem o mesmo, e você se torna uma figura venerada como o Portador da Luz");
+        System.out.println("\n"+ nome +" decide usar o poder do Olho de Oráculo para conceder"+
+        " um desejo que beneficie toda a humanidade."+
+        "Sua ação inspira outros a fazerem o mesmo, e você se torna uma figura venerada como o"+
+        " Portador da Luz");
     }
 
 
     private static void desejos1(String nome) {
         
-        System.out.println(""+ nome +" decide usar o poder do Olho de Oráculo para realizar um desejo pessoal egoísta.\n"+
-        "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza.");
+        System.out.println(""+ nome +" decide usar o poder do Olho de Oráculo para realizar um"+
+        " desejo pessoal egoísta.\n"+ "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento"+
+        " e tristeza.");
     }
     
 
     private static void mensagempricipal() {
         System.out.println("\nTitulo: A Jornada do Destino\n"+
-                "\nVocê é um aventureiro corajoso em busca de uma relíquia antiga conhecida como O Olho de Oráculo.\n"+
-                "Rumores dizem que ele possui o poder de conceder um desejo a quem o encontrar. Você segue as pistas\n"+
-                "até chegar a uma antiga floresta encantada. Agora, a historia se desenrola e você deve tomar algumas decisões cruciais.\n");
+        "\nVocê é um aventureiro corajoso em busca de uma relíquia antiga conhecida como O"+
+        " Olho de Oráculo.\n"+
+        "Rumores dizem que ele possui o poder de conceder um desejo a quem o encontrar. Você"+
+        " segue as pistas\n"+"até chegar a uma antiga floresta encantada. Agora, a historia se"+
+        " desenrola e você deve tomar algumas decisões cruciais.\n");
     }
 
     private static void final_poder3() {
         System.out.println("Final: Protetor do mundo\n\n" +
-                "Cada escolha traz um caminho único com diferentes desafios e finais.\n" + 
-                "Sua história é moldada pelas decisões que você toma\n" +
-                "Lembre-se de que, no final, é a jornada e as lições aprendidas"+
-                 "ao longo do caminho que são verdadeiramente valiosas.");
+        "Cada escolha traz um caminho único com diferentes desafios e finais.\n" + 
+        "Sua história é moldada pelas decisões que você toma\n" +
+        "Lembre-se de que, no final, é a jornada e as lições aprendidas"+
+            "ao longo do caminho que são verdadeiramente valiosas.");
     }
 
     private static void poder3() {
         System.out.println("\nDestruir o Olho de Oráculo\n"+
-                "Você acredita que o poder do olho de Oráculo é intrinsecamente perigoso e\n"+ 
-                "não deve cair nas mãos erradas. Com essa convicção, você decide destruir a\n"+ 
-                "relíquia para que seu poder não possa ser mal utilizado. Sua ação garante a segurança do mundo,\n"+
-                "mas a busca pelo desejo concedido é deixada de lado.\n");
+        "Você acredita que o poder do olho de Oráculo é intrinsecamente perigoso e\n"+ 
+        "não deve cair nas mãos erradas. Com essa convicção, você decide destruir a\n"+ 
+        "relíquia para que seu poder não possa ser mal utilizado. Sua ação garante a segurança do mundo,\n"+
+        "mas a busca pelo desejo concedido é deixada de lado.\n");
     }
 
     private static void final_poder2() {
@@ -211,9 +218,9 @@ public class JornadaDoDestino {
 
     private static void poder2(String nome) {
         System.out.println("\nRenunciar ao poder do Olho de Oráculo\n" +
-                ""+ nome +" decide que o poder do Olho de Oráculo é perigoso demais para ser usado, mesmo com sabedoria.\n"+ 
-                "Em um ato de humildade, você renuncia ao desejo de possui-lo e parte em uma jornada para alertar outros sobre\n" +
-                "os perigos que ele representa.\n");
+        ""+ nome +" decide que o poder do Olho de Oráculo é perigoso demais para ser usado, mesmo com sabedoria.\n"+ 
+        "Em um ato de humildade, você renuncia ao desejo de possui-lo e parte em uma jornada para alertar outros sobre\n" +
+        "os perigos que ele representa.\n");
     }
 
     private static void final_poder1() {
@@ -230,17 +237,17 @@ public class JornadaDoDestino {
 
     private static void sabedoria3() {
         System.out.println("\nSeguir o caminho da sabedoria\n"+
-                "Você escolhe aprender com o eremita sábio e mergulha em uma jornada interna de autoconhecimento.\n"+ 
-                "Ele o ensina sobre o equilíbrio entre luz e escuridão, poder e compaixão. Quando você se sente pronto,\n" +
-                "ele indica o caminho para o Olho de Oráculo. Agora, surge uma nova escolha diante de você");
-    }
+        "Você escolhe aprender com o eremita sábio e mergulha em uma jornada interna de autoconhecimento.\n"+ 
+        "Ele o ensina sobre o equilíbrio entre luz e escuridão, poder e compaixão. Quando você se sente pronto,\n" +
+        "ele indica o caminho para o Olho de Oráculo. Agora, surge uma nova escolha diante de você");
+}
 
     private static void luz2() {
         System.out.println("\nSeguir o caminho da luz\n"+
-                "\nVocê confia na sabedoria dos seres pac\u00EDficos e s\u00E1bios da cidade flutuante.\n"+ 
-                "Eles lhe fornecem um mapa que mostra a localiza\u00E7\u00E3o exata do \"Olho de Or\u00E1culo\n"+
-                 "Seguindo o mapa, você chega a um templo antigo e enfrenta desafios que testam sua compaixão e empatia.\n" + //
-                "\nAgora, surge uma nova escolha diante de voc\u00EA:\n");
+        "\nVocê confia na sabedoria dos seres pac\u00EDficos e s\u00E1bios da cidade flutuante.\n"+ 
+        "Eles lhe fornecem um mapa que mostra a localiza\u00E7\u00E3o exata do \"Olho de Or\u00E1culo\n"+
+            "Seguindo o mapa, você chega a um templo antigo e enfrenta desafios que testam sua compaixão e empatia.\n" + //
+        "\nAgora, surge uma nova escolha diante de voc\u00EA:\n");
     }
 
 
@@ -258,17 +265,16 @@ public class JornadaDoDestino {
 
     private static void tesouro1(String nome) {
         System.out.println("\nPegar os tesouros e retornar\n" + //
-                "\n"+ nome +" decide pegar os tesouros e voltar ao mundo exterior. Com sua mochila cheia de riquezas,\n"+ 
-                "você retorna à superperfície e se torna uma lenda entre os aventureiros. Sua riqueza permite que você"+
-                " viva uma vida conforavel,\n"+
-                "mas a busca pelo Olho de Oráculo permanece incompleta.\n");
+        "\n"+ nome +" decide pegar os tesouros e voltar ao mundo exterior. Com sua mochila cheia de riquezas,\n"+ 
+        "você retorna à superperfície e se torna uma lenda entre os aventureiros. Sua riqueza permite que você"+
+        " viva uma vida conforavel,\n"+
+        "mas a busca pelo Olho de Oráculo permanece incompleta.\n");
     }
 
     private static void mensagem1() {
         System.out.println("\nSeguir o caminho da escuridão\n" + 
-                "\nVocê decide seguir um caminho sombrio e misterioso que parece levar a um reino subterrâneo."+ 
-                "\nEle é guardado por criaturas assustadoras e perigosas. No entanto, há boatos de que grandes tesouros"+
-                 " estão escondidos lá.\n" +
-                 "Você deseja enfrentar os perigos e desafios em busca de riquezas?\n");
+        "\nVocê decide seguir um caminho sombrio e misterioso que parece levar a um reino subterrâneo."+ 
+        "\nEle é guardado por criaturas assustadoras e perigosas. No entanto, há boatos de que grandes tesouros"+
+        " estão escondidos lá.\n" +"Você deseja enfrentar os perigos e desafios em busca de riquezas?\n");
     }
 }
