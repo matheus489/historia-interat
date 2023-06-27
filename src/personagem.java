@@ -9,14 +9,10 @@ public class personagem {
 
 
     }
-    public void adicionarEnergia(int quantidade) {
+    public void alterar_energia(int quantidade) {
         energia += quantidade;
     }
 
-    public void subtrairEnergia(int quantidade) {
-        energia -= quantidade;
-    }
-    
 }
 
         

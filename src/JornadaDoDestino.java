@@ -7,7 +7,6 @@ public class JornadaDoDestino {
         personagem pessoa1 = new personagem("morgano", 100);
         personagem pessoa2 = new personagem("florio", 100);
         personagem pessoa3 = new personagem("Odin", 100);
-        //personagem persona2 = new personagem("Vigario", 100);
         mensagempricipal();
 
         System.out.println("Bem-vindo à Jornada do Destino!");
@@ -36,7 +35,7 @@ public class JornadaDoDestino {
             mensagem1();
             System.out.println("Seu nome é: " + pessoa1.nome);
             pular_linha();
-            pessoa1.subtrairEnergia(40);
+            pessoa1.alterar_energia(-40);
             System.out.println("Sua energia é: "+ pessoa1.energia);
             pular_linha();
             boolean escolhaCerta1 = false;
@@ -53,12 +52,12 @@ public class JornadaDoDestino {
 
                 tesouro1(pessoa1.nome);
                 final_tesouro1();
-                pessoa1.adicionarEnergia(20);
+                pessoa1.alterar_energia(20);
                 System.out.println("Sua energia é: " + pessoa1.energia);
 
             }else if(escolha1.equalsIgnoreCase("Procurar")){
                 escolhaCerta1 = true;
-                pessoa1.subtrairEnergia(60);
+                pessoa1.alterar_energia(-60);
                 procura1(pessoa1.nome);
                 final_procura2();
             System.out.println("Sua energia chegou "+ pessoa1.energia +", morte imediata.");
@@ -96,7 +95,7 @@ public class JornadaDoDestino {
                 escolhaCerta2 = true;
                 desejos1(pessoa2.nome);
                 pular_linha();
-                pessoa2.subtrairEnergia(45);
+                pessoa2.alterar_energia(-45);
                 System.out.println("Sua energia é: " + pessoa2.energia);
                 final_desejo1();}
                 else {
