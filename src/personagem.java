@@ -9,6 +9,10 @@ public class personagem {
 
 
     }
+    public void energia(){
+        System.out.println("Energia atual do personagem: " + energia);
+    }
+    
     public void alterar_energia(int quantidade) {
         energia += quantidade;
     }
