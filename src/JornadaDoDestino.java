@@ -5,16 +5,20 @@ public class JornadaDoDestino {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
+        String[] escolhasneblina1 = {"tesouro", "procurar"};
+        String[] escolhasluz1 = {"Compartilhar", "desejos"}; 
+        String[] escolhassabedoria1 = {"Utilizar", "Renunciar"};    
+
         personagem pessoa1 = new personagem("morgano", 100);
         personagem pessoa2 = new personagem("florio", 100);
         personagem pessoa3 = new personagem("Odin", 100);
-        capitulo neblina1 = new capitulo("morgano",mensagem1, "tesouro", "procurar", pessoa1,-20);
+        capitulo neblina1 = new capitulo("morgano",mensagem1, escolhasneblina1, pessoa1,-20);
         capitulo neblina12 = new capitulo("morgano",tesouro1,  pessoa1, -20); 
         capitulo neblina13 = new capitulo("morgano",procura1,  pessoa1, -80);
-        capitulo luz1 = new capitulo("florio",luz,"Compartilhar","desejos",  pessoa2, 0);
+        capitulo luz1 = new capitulo("florio",luz,escolhasluz1,  pessoa2, 0);
         capitulo luz12 = new capitulo("florio",luz3,  pessoa2, 0);
         capitulo luz13 = new capitulo("florio",desejos1,  pessoa2, -45);
-        capitulo sabedoria1 = new capitulo("Odin",sabedoria3,"Utilizar","Renunciar",  pessoa3, 0);
+        capitulo sabedoria1 = new capitulo("Odin",sabedoria3, escolhassabedoria1,  pessoa3, 0);
         capitulo sabedoria12 = new capitulo("Odin",poder1, pessoa3, -10);
         capitulo sabedoria13 = new capitulo("Odin",poder2, pessoa3,0);;
         mensagempricipal();

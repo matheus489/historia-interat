@@ -3,19 +3,18 @@ import java.util.Scanner;
 public class capitulo {
     private String nome;
     private String texto;
-    private String escolha1 ;
-    private String escolha2 ;
+    private String[] escolhas;
     personagem personagem;
     private int alterarEnergia;
 
    
-    public capitulo(String nome, String texto, String escolha1, String escolha2, personagem personagem, int alterarEnergia) {
+    public capitulo(String nome, String texto, String[] escolhas, personagem personagem, int alterarEnergia) {
         this.nome = nome;
         this.texto = texto;
-        this.escolha1 = escolha1;
-        this.escolha2 = escolha2;
+        this.escolhas = escolhas;
         this.personagem = personagem;
         this.alterarEnergia = alterarEnergia;
+       
     }
     public capitulo(String nome, String texto, personagem personagem, int alterarEnergia) {
         this.nome = nome;
@@ -29,9 +28,13 @@ public class capitulo {
         personagem.alterar_energia(alterarEnergia);
         personagem.energia();
         System.out.println(texto);
-        System.out.println("Escolha 1: " + escolha1);
-        System.out.println("Escolha 2: " + escolha2);
         
+        if (escolhas.length == 0) {
+        System.out.println("Este é o capítulo final. Não há escolhas disponíveis.");
+    } else {
+        System.out.println("Escolha 1: " + escolhas[0]);
+        System.out.println("Escolha 2: " + escolhas[1]);
+    }
     }
     public void mostrar1() {
         System.out.println("\nO seu nome é:" + nome);
@@ -51,11 +54,11 @@ public class capitulo {
                 escolha = scanner.nextInt();
             
 
-                if (escolha == 1 || escolha == 2) {
-                    escolhaValida = true;
-                } else {
-                    System.out.println("Escolha inválida. Por favor, digite 1 ou 2.");
-                }
+                if (escolha >= 1 && escolha <= escolhas.length) {
+                escolhaValida = true;
+            } else {
+                System.out.println("Escolha inválida. Por favor, digite um valor válido.");
+            }
             }
    
             return escolha;
