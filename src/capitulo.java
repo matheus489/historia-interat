@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class capitulo {
     private String nome;
@@ -16,12 +17,6 @@ public class capitulo {
         this.alterarEnergia = alterarEnergia;
        
     }
-    public capitulo(String nome, String texto, personagem personagem, int alterarEnergia) {
-        this.nome = nome;
-        this.texto = texto;
-        this.personagem = personagem;
-        this.alterarEnergia = alterarEnergia;
-    }
 
     public void mostrar() {
         System.out.println("\nO seu nome é:" + nome);
@@ -29,19 +24,12 @@ public class capitulo {
         personagem.energia();
         System.out.println(texto);
         
-        if (escolhas.length == 0) {
-        System.out.println("Este é o capítulo final. Não há escolhas disponíveis.");
-    } else {
+        if (escolhas.length < 0) {
         System.out.println("Escolha 1: " + escolhas[0]);
         System.out.println("Escolha 2: " + escolhas[1]);
+    } else {
+System.out.println("Fim de jogo.");
     }
-    }
-    public void mostrar1() {
-        System.out.println("\nO seu nome é:" + nome);
-        personagem.alterar_energia(alterarEnergia);
-        personagem.energia();
-        System.out.println(texto);
-        
     }
 
     public int escolher() {

@@ -13,14 +13,14 @@ public class JornadaDoDestino {
         personagem pessoa2 = new personagem("florio", 100);
         personagem pessoa3 = new personagem("Odin", 100);
         capitulo neblina1 = new capitulo("morgano",mensagem1, escolhasneblina1, pessoa1,-20);
-        capitulo neblina12 = new capitulo("morgano",tesouro1,  pessoa1, -20); 
-        capitulo neblina13 = new capitulo("morgano",procura1,  pessoa1, -80);
+        capitulo neblina12 = new capitulo("morgano",tesouro1,escolhasneblina1,  pessoa1, -20); 
+        capitulo neblina13 = new capitulo("morgano",procura1,escolhasneblina1,  pessoa1, -80);
         capitulo luz1 = new capitulo("florio",luz,escolhasluz1,  pessoa2, 0);
-        capitulo luz12 = new capitulo("florio",luz3,  pessoa2, 0);
-        capitulo luz13 = new capitulo("florio",desejos1,  pessoa2, -45);
+        capitulo luz12 = new capitulo("florio",luz3,escolhasluz1,  pessoa2, 0);
+        capitulo luz13 = new capitulo("florio",desejos1,escolhasluz1,  pessoa2, -45);
         capitulo sabedoria1 = new capitulo("Odin",sabedoria3, escolhassabedoria1,  pessoa3, 0);
-        capitulo sabedoria12 = new capitulo("Odin",poder1, pessoa3, -10);
-        capitulo sabedoria13 = new capitulo("Odin",poder2, pessoa3,0);;
+        capitulo sabedoria12 = new capitulo("Odin",poder1,escolhassabedoria1, pessoa3, -10);
+        capitulo sabedoria13 = new capitulo("Odin",poder2,escolhassabedoria1, pessoa3,0);;
         mensagempricipal();
         
 
@@ -52,11 +52,11 @@ public class JornadaDoDestino {
            
            
             if(neblina == 1) {  
-                neblina12.mostrar1();
+                neblina12.mostrar();
                 
 
             }else if(neblina ==2){
-                neblina13.mostrar1();            
+                neblina13.mostrar();            
         }
 
         }if (escolha.equalsIgnoreCase("luz")) {
@@ -65,10 +65,10 @@ public class JornadaDoDestino {
             int luz = luz1.escolher();
 
             if(luz==1) {
-                luz12.mostrar1();
+                luz12.mostrar();
 
             }else if(luz==2){
-                luz13.mostrar1();
+                luz13.mostrar();
             }
             
         } } if (escolha.equalsIgnoreCase("sabedoria")) {
@@ -76,10 +76,10 @@ public class JornadaDoDestino {
             int sabedoria = sabedoria1.escolher();
 
             if(sabedoria==1) {
-                sabedoria12.mostrar1();
+                sabedoria12.mostrar();
 
         } else if(sabedoria==2) {
-            sabedoria13.mostrar1();
+            sabedoria13.mostrar();
 
         }
         scanner.close();
