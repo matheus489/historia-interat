@@ -1,8 +1,15 @@
 
 public class personagem {
     String nome;
+    public String getNome() {
+        return nome;
+    }
+
     int energia;
 
+    public int getEnergia() {
+        return energia;
+    }
     public personagem (String nome, int energia){
         this.nome = nome;
         this.energia = energia;
