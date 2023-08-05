@@ -1,13 +1,14 @@
 
 public class personagem {
-    String nome;
+    private String nome;
+    private int energia;
     public String getNome() {
         return nome;
     }
 
-    int energia;
+    
 
-    public int getEnergia() {
+     public int getEnergia() {
         return energia;
     }
     public personagem (String nome, int energia){

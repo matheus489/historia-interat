@@ -6,11 +6,11 @@ public class JornadaDoDestino {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
       
-
+        personagem Personageminicial = new personagem("nome", 0);
         personagem pessoa1 = new personagem("morgano", 100);
         personagem pessoa2 = new personagem("florio", 100);
         personagem pessoa3 = new personagem("Odin", 100);
-        Capitulo1 Capitulo1inicial = new Capitulo1(mensagempricipal);
+        Capitulo1 Capitulo1inicial = new Capitulo1(mensagempricipal,Personageminicial);
         Capitulo1 neblina1 = new Capitulo1("morgano",mensagem1, pessoa1,-20);
         Capitulo1 neblina12 = new Capitulo1("morgano",tesouro1,  pessoa1, -20); 
         Capitulo1 neblina13 = new Capitulo1("morgano",procura1,  pessoa1, -80);
