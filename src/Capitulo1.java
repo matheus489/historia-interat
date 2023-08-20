@@ -1,73 +1,97 @@
-
 import java.util.Scanner;
+import java.util.ArrayList;
 
-class Capitulo1 {
-    Scanner  scanner = new Scanner(System.in);
+
+public class Capitulo1 {
+    private Scanner escaneador = new Scanner(System.in);
     private String texto;
-    private int alterarEnergia;
+    private ArrayList<Escolha1> escolhas;
     private personagem personagem;
-    Escolha1[] escolhas;
-    public Capitulo1(String nome, String texto, personagem personagem, int alterarEnergia) {
-        this.texto = texto;
-        this.alterarEnergia = alterarEnergia;
-        this.personagem = personagem;
-    }
+    private int qtdfeliz;
+   
 
-    public Capitulo1(String texto, personagem personagem) {
+    public Capitulo1(String texto,ArrayList<Escolha1> escolhas, personagem personagem, int qtdfeliz){
         this.texto = texto;
         this.personagem = personagem;
+        this.qtdfeliz = qtdfeliz;
+        this.escolhas = new ArrayList<>();
     }
 
-    public void mostrar() {
-        System.out.println(texto);
-        if(this.escolhas != null){
-            for(int i = 0; i < escolhas.length; i++){
-                System.out.println((i+1) +":"+escolhas[i].getTexto());
-               
-            }
-            System.out.println("Sua Energia atual é: " + personagem.getEnergia());
-            int Capituloescolha = escolher();
-            escolhas[Capituloescolha-1].proximo.mostrar();
-                }
-            else{
-                personagem.alterar_energia(alterarEnergia);
-                System.out.println("Sua Energia final é:" + personagem.getEnergia());
-            }
-            }
+    public void mostrar(){
+         System.out.println(this.texto);
+        
     
-    public int escolher() {
-        int opcao = 0;
-        boolean escolhaInvalida = false;
-        String resposta;
-
-        if (escolhas == null) {
-            return 0;
-            
+        if(qtdfeliz != 0){
+            this.personagem.mudaFelicidade(qtdfeliz);
         }
-        else{
-        
-        while (!escolhaInvalida) {
-            resposta = scanner.nextLine();
-            for (int i = 0; i < escolhas.length; i++){
-                if (resposta.equalsIgnoreCase(escolhas[i].getTexto())) {
-                    escolhaInvalida = true;
-                    opcao = i + 1;
-                break;}
-                }
-
-                    if (!escolhaInvalida) {
-                    System.out.println("Digite novamente");} } }
-                 
-                
-           return opcao; }
-           
-        
     
-    
+    }
+         public void executar() {
+            mostrar();
+            escolher();
+         }
+        
 
-    public void executar() {
-        mostrar();
-        escolher();
+
+         public void escolher(){
+            boolean escolhaValida = true;
+            while (escolhaValida) {
+                String resposta = escaneador.nextLine();
+                for (Escolha1 escolha : escolhas) {
+                    if (resposta.equalsIgnoreCase(escolha.getTexto())) {
+                        escolhaValida = false;
+                        Capitulo1 proximoCapitulo = escolha.getProximo();
+                        proximoCapitulo.executar();
+                        return;
+            }  
+       
+          }
+          System.out.println("Você digitou errado, tente novamente!");
+       }
+    }
+
+    public Scanner getEscaneador() {
+        return escaneador;
+    }
+
+    public void setEscaneador(Scanner escaneador) {
+        this.escaneador = escaneador;
+    }
+
+   
+    public void setTexto(String texto) {
+        this.texto = texto;
+    }
+
+    public ArrayList<Escolha1> getEscolhas() {
+        return escolhas;
+    }
+
+    public void addescolhas(Escolha1 escolha){
+        escolhas.add(escolha);
+    } 
+   
+    public personagem getPersonagem() {
+        return personagem;
+    }
+
+  
+    public void setPersonagem(personagem personagem) {
+        this.personagem = personagem;
+    }
+
+    public int getQtdfeliz() {
+        return qtdfeliz;
+    }
+
+
+    public void setQtdfeliz(int qtdfeliz) {
+        this.qtdfeliz = qtdfeliz;
     }
 
 }
+
+        
+
+        
+         
