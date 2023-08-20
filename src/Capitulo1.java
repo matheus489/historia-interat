@@ -16,8 +16,12 @@ public class Capitulo1 {
         this.Alteraçãodeenergia = Alteraçãodeenergia;
         this.escolhas = new ArrayList<>();
     }
-
-    public void mostrar(){
+    
+         public void executar() {
+            mostrar();
+            escolher();
+         }
+         public void mostrar(){
          System.out.println(this.texto);
         
     
@@ -26,12 +30,6 @@ public class Capitulo1 {
         }
     
     }
-         public void executar() {
-            mostrar();
-            escolher();
-         }
-        
-
 
          public void escolher(){
             boolean escolhaValida = true;
