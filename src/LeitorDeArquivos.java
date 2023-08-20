@@ -46,8 +46,8 @@ public class LeitorDeArquivos {
                     String origem = leitor.nextLine();
                     String texto = leitor.nextLine();
                     String refpersonagem = leitor.nextLine();
-                    int mudanca = Integer.parseInt(leitor.nextLine());
-                    Capitulo1 Capitulo1 = new Capitulo1(texto,escolha,persongens.get(refpersonagem),mudanca );
+                    int alteração = Integer.parseInt(leitor.nextLine());
+                    Capitulo1 Capitulo1 = new Capitulo1(texto,escolha,persongens.get(refpersonagem),alteração );
                     Capitulo1s.put(origem,Capitulo1);
                 }
                 else if(linha.equalsIgnoreCase("ESCOLHA")){

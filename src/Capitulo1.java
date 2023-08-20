@@ -7,13 +7,13 @@ public class Capitulo1 {
     private String texto;
     private ArrayList<Escolha1> escolhas;
     private personagem personagem;
-    private int qtdfeliz;
+    private int Alteraçãodeenergia;
    
 
-    public Capitulo1(String texto,ArrayList<Escolha1> escolhas, personagem personagem, int qtdfeliz){
+    public Capitulo1(String texto,ArrayList<Escolha1> escolhas, personagem personagem, int Alteraçãodeenergia){
         this.texto = texto;
         this.personagem = personagem;
-        this.qtdfeliz = qtdfeliz;
+        this.Alteraçãodeenergia = Alteraçãodeenergia;
         this.escolhas = new ArrayList<>();
     }
 
@@ -21,8 +21,8 @@ public class Capitulo1 {
          System.out.println(this.texto);
         
     
-        if(qtdfeliz != 0){
-            this.personagem.mudaFelicidade(qtdfeliz);
+        if(Alteraçãodeenergia != 0){
+            this.personagem.mudaFelicidade(Alteraçãodeenergia);
         }
     
     }
@@ -50,11 +50,11 @@ public class Capitulo1 {
        }
     }
 
-    public Scanner getEscaneador() {
+    public Scanner getEscanar() {
         return escaneador;
     }
 
-    public void setEscaneador(Scanner escaneador) {
+    public void setEscanear(Scanner escaneador) {
         this.escaneador = escaneador;
     }
 
@@ -80,13 +80,13 @@ public class Capitulo1 {
         this.personagem = personagem;
     }
 
-    public int getQtdfeliz() {
-        return qtdfeliz;
+    public int getAlteraçãodeenergia() {
+        return Alteraçãodeenergia;
     }
 
 
-    public void setQtdfeliz(int qtdfeliz) {
-        this.qtdfeliz = qtdfeliz;
+    public void setAlteraçãodeenergia(int qtdfeliz) {
+        this.Alteraçãodeenergia = qtdfeliz;
     }
 
 }

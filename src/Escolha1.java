@@ -1,5 +1,6 @@
 public class Escolha1 {
     private String texto;
+    
     private Capitulo1 proximo;
 
     public Escolha1(String texto, Capitulo1 proximo){
