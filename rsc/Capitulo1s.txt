@@ -1,0 +1,97 @@
+CAPITULO
+mensagempricipal
+Você é um aventureiro corajoso em busca de uma relíquia antiga conhecida como O Olho de Oráculo. Rumores dizem que ele possui o poder de conceder um desejo a quem o encontrar. Você segue as pistas até chegar a uma antiga floresta encantada. Agora, a historia se desenrola e você deve tomar algumas decisões cruciais. Bem-vindo à Jornada do Destino! Qual caminho você escolherá? Seguir o caminho da neblina Seguir o caminho da luz Seguir o caminho da sabedoria.
+personagem1
+
+CAPITULO
+neblina1
+Seguir o caminho da escuridão Morgano decide seguir um caminho sombrio e misterioso que parece levar a um reino subterrâneo. Ele é guardado por criaturas assustadoras e perigosas. No entanto, há boatos de que grandes tesouros estão escondidos lá. Você deseja enfrentar os perigos e desafios em busca de riquezas?
+personagem1
+
+CAPITULO
+luz1
+Você confia na sabedoria dos seres pacificos e sabios da cidade flutuante. Eles lhe fornecem um mapa que mostra a localização Seguindo o mapa, você chega a um templo antigo e enfrenta desafios que testam sua compaixão e empatia. Agora, surge uma nova Escolha1 diante de você.
+personagem
+
+CAPITULO
+sabedoria1
+Você escolhe aprender com o eremita sábio e mergulha em uma jornada interna de autoconhecimento. Ele o ensina sobre o equilíbrio entre luz e escuridão, poder e compaixão. Quando você se sente pronto, ele indica o caminho para o Olho de Oráculo. Agora, surge uma nova diante de você
+personagem3
+
+CAPITULO
+neblina12
+Morgano decide pegar os tesouros e voltar ao mundo exterior. Com sua mochila cheia de riquezas, você retorna à superperfície e se torna uma lenda entre os aventureiros. Sua riqueza permite que você viva uma vida conforavel, mas a busca pelo Olho de Oráculo permanece incompleta. Final: Vida confortavel, mas incompleta.
+personagem1
+
+CAPITULO
+neblina13
+Morgano decide que os tesouros não são o suficientes e continua sua busca pelo Olho de Oráculo. À medida que avança, percebe que a escuridão começa a afetar sua mente e sua moral. Finalmente, você encontra a relíquias, mas ao toca-la, é consumido pela escuridão e perde sua humanidade. Final: Corrompido pela escuridão.
+personagem1
+
+CAPITULO
+luz12
+florio decide usar o poder do Olho de Oráculo para conceder um desejo que beneficie toda a humanidade. Sua ação inspira outros a fazerem o mesmo, e você se torna uma figura venerada como o Portador da Luz. Final: herói da humanidade
+personagem2
+
+CAPITULO
+luz13
+florio decide usar o poder do Olho de Oráculo para realizar um desejo pessoal egoísta.\n"+ "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza. Final: Sozinho e corrompido.  
+personagem2
+
+CAPITULO
+sabedoria12
+Odin encontra o Olho de Oráculo e usa seu poder com sabedoria, buscando um equilíbrio entre a luz e a neblina. Compreendendo que o poder da relíquia é uma responsabilidade, você toma decisões cuidadosas e usa seus poderes para ajudar aqueles ao seu redor. Final: Guardião do equilíbrio.
+personagem3
+
+CAPITULO
+sabedoria13
+Odin decide que o poder do Olho de Oráculo é perigoso demais para ser usado, mesmo com sabedoria. Em um ato de humildade, você renuncia ao desejo de possui-lo e parte em uma jornada para alertar outros sobre os perigos que ele representa.\n\nFinal: Protetor da humanidade. 
+personagem3
+
+ESCOLHA
+mensagempricipal
+Neblina
+neblina1
+
+ESCOLHA
+mensagempricipal
+Luz
+luz1
+
+ESCOLHA
+mensagempricipal
+Sabedoria
+sabedoria1
+
+ESCOLHA
+neblina1
+tesouro
+neblina12
+
+ESCOLHA
+neblina1
+procurar
+neblina13
+
+ESCOLHA
+luz1
+Compartilhar
+luz12
+
+ESCOLHA
+luz1
+desejos
+luz13
+
+ESCOLHA
+sabedoria1
+Utilizar
+sabedoria12
+
+ESCOLHA
+sabedoria1
+Renunciar
+sabedoria13
+
+10
+

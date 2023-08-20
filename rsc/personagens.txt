@@ -1,0 +1,3 @@
+morgano,100
+Florio,100
+Odin,100
