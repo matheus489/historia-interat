@@ -8,28 +8,19 @@ public class personagem {
     this.energia = energia;
   }
 
-    boolean mudaFelicidade(int mudanca){
-      boolean feliz = true;
-      this.energia += mudanca;
+    boolean alteraçãoEnergia1(int modificação){
+      boolean energiaBoa = true;
+      this.energia += modificação;
 
       if(energia <= 0){
         this.energia = 0;
-        System.out.println("sua felicidade é: "+ this.energia);
-        System.out.println(this.nome + " morreu de tristeza");
-        feliz = false;
-        return feliz;
+        System.out.println("sua energia é: "+ this.energia);
+        System.out.println(this.nome + " morreu");
+        energiaBoa = false;
+        return energiaBoa;
       }
-      else if(energia > 50){
-        this.energia = 50;
-        System.out.println("sua nova felicidade é: "+ this.energia);
-        System.out.println(this.nome+ " está extremamente feliz!");
-        return feliz;
-      }
-      else{
-        System.out.println(this.nome +" mudou seu estado de felicidade");
-        System.out.println("Sua nova felicidade é de "+ this.energia);
-        return feliz;
-      } 
+      return energiaBoa;
+      
      
     }
   
@@ -48,8 +39,8 @@ public class personagem {
     }
 
    
-    public void setEnergia(int felicidade) {
-        this.energia = felicidade;
+    public void setEnergia(int energia) {
+        this.energia = energia;
     }
 
 }

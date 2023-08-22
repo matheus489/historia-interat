@@ -22,12 +22,19 @@ public class Capitulo1 {
             escolher();
          }
          public void mostrar(){
+            System.out.println();
          System.out.println(this.texto);
+        System.out.println("Energia: " + personagem.getEnergia());
+        if(escolhas == null){
+        System.out.println("Digite a opção desejada: ");}
+
+        for (Escolha1 escolha : escolhas){
+            System.out.println(escolha.getTexto());
         
     
         if(Alteraçãodeenergia != 0){
-            this.personagem.mudaFelicidade(Alteraçãodeenergia);
-        }
+            this.personagem.alteraçãoEnergia1(Alteraçãodeenergia);
+        }}
     
     }
 

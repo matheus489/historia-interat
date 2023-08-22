@@ -13,18 +13,18 @@ public class LeitorDeArquivos {
             Scanner leitor = new Scanner(arquivo,"UTF-8");
 
             while (leitor.hasNextLine()){
-                String linha = leitor.nextLine();
-                if (linha.equalsIgnoreCase("personagem")){
+                //String linha = leitor.nextLine();
+                //if (linha.equalsIgnoreCase("PERSONAGEM")){
                     String id = leitor.nextLine();
                     String nome = leitor.nextLine();
-                    int felicidade = Integer.parseInt(leitor.nextLine());
-                    personagem consPersonagem = new personagem(nome,felicidade);
+                    int Alteraçãodeenergia = Integer.parseInt(leitor.nextLine());
+                    personagem consPersonagem = new personagem(nome,Alteraçãodeenergia);
                     personagens.put(id, consPersonagem);
 
 
                 }
 
-            }
+            
             leitor.close();
         }
          catch(FileNotFoundException x){

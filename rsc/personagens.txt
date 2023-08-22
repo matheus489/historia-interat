@@ -1,3 +1,9 @@
-morgano,100
-Florio,100
-Odin,100
+personagem1
+morgano
+100
+personagem2
+Florio
+100
+personagem3
+Odin
+100
