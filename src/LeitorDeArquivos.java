@@ -13,8 +13,6 @@ public class LeitorDeArquivos {
             Scanner leitor = new Scanner(arquivo,"UTF-8");
 
             while (leitor.hasNextLine()){
-                //String linha = leitor.nextLine();
-                //if (linha.equalsIgnoreCase("PERSONAGEM")){
                     String id = leitor.nextLine();
                     String nome = leitor.nextLine();
                     int Alteraçãodeenergia = Integer.parseInt(leitor.nextLine());
