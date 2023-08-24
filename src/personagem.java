@@ -1,6 +1,6 @@
 public class personagem {
     private String nome;
-    private int energia;
+    protected int energia;
     
     
    public personagem(String nome, int energia){
@@ -8,7 +8,7 @@ public class personagem {
     this.energia = energia;
   }
 
-    boolean alteraçãoEnergia1(int modificação){
+    protected boolean alteraçãoEnergia1(int modificação){
       boolean energiaBoa = true;
       this.energia += modificação;
 

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Capitulo1 {
     private Scanner escaneador = new Scanner(System.in);
-    private String texto;
-    private ArrayList<Escolha1> escolhas;
-    private personagem personagem;
-    private int Alteraçãodeenergia;
+    protected String texto;
+    protected ArrayList<Escolha1> escolhas;
+    protected personagem personagem;
+    protected int Alteraçãodeenergia;
    
 
-    public Capitulo1(String texto,ArrayList<Escolha1> escolhas, personagem personagem, int Alteraçãodeenergia){
+    protected Capitulo1(String texto,ArrayList<Escolha1> escolhas, personagem personagem, int Alteraçãodeenergia){
         this.texto = texto;
         this.personagem = personagem;
         this.Alteraçãodeenergia = Alteraçãodeenergia;
@@ -21,9 +21,10 @@ public class Capitulo1 {
             mostrar();
             escolher();
          }
-         public void mostrar(){
+         protected void mostrar(){
             System.out.println();
          System.out.println(this.texto);
+            System.out.println("Nome: " + personagem.getNome());
         System.out.println("Energia: " + personagem.getEnergia());
         if(escolhas == null){
         System.out.println("Digite a opção desejada: ");}

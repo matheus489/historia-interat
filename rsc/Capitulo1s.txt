@@ -1,10 +1,69 @@
-CAPITULO
+CAPITULO_COM_IMAGEM
+               /|
+                                     |\|
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                  ~-[{o}]-~
+                                     |/|
+                                     |/|
+             ///~`     |\\_          `0'         =\\\\         . .
+            ,  |='  ,))\_| ~-_                    _)  \      _/_/|
+           / ,' ,;((((((    ~ \                  `~~~\-~-_ /~ (_/\
+         /' -~/~)))))))'\_   _/'                      \_  /'  D   |
+        (       (((((( ~-/ ~-/                          ~-;  /    \--_
+         ~~--|   ))''    ')  `                            `~~\_    \   )
+             :        (_  ~\           ,                    /~~-     ./
+              \        \_   )--__  /(_/)                   |    )    )|
+    ___       |_     \__/~-__    ~~   ,'      /,_;,   __--(   _/      |
+  //~~\`\    /' ~~~----|     ~~~~~~~~'        \-  ((~~    __-~        |
+((()   `\`\_(_     _-~~-\                      ``~~ ~~~~~~   \_      /
+ )))     ~----'   /      \                                   )       )
+  (         ;`~--'        :                                _-    ,;;(
+            |    `\       |                             _-~    ,;;;;)
+            |    /'`\     ;                          _-~          _/
+           /~   /    |    )                         /;;;''  ,;;:-~
+          |    /     / | /                         |;;'   ,''
+          /   /     |  \\|                         |   ,;(    -Tua Xiong
+        _/  /'       \  \_)                   .---__\_    \,--._______
+       ( )|'         (~-_|                   (;;'  ;;;~~~/' `;;|  `;;;\
+        ) `\_         |-_;;--__               ~~~----__/'    /'_______/
+        `----'       (   `~--_ ~~~;;------------~~~~~ ;;;'_/'
+                     `~~~~~~~~'~~~-----....___;;;____---~~
+FIMDAIMAGEM
 mensagempricipal
 Você é um aventureiro corajoso em busca de uma relíquia antiga conhecida como O Olho de Oráculo. Rumores dizem que ele possui o poder de conceder um desejo a quem o encontrar. Você segue as pistas até chegar a uma antiga floresta encantada. Agora, a historia se desenrola e você deve tomar algumas decisões cruciais. Bem-vindo à Jornada do Destino! Qual caminho você escolherá? Seguir o caminho da neblina Seguir o caminho da luz Seguir o caminho da sabedoria.
 personagem1
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+  ,--,  ,.-.
+               ,                   \,       '-,-`,'-.' | ._
+              /|           \    ,   |\         }  )/  / `-,',
+              [ ,          |\  /|   | |        /  \|  |/`  ,`
+              | |       ,.`  `,` `, | |  _,...(   (      .',
+              \  \  __ ,-` `  ,  , `/ |,'      Y     (   /_L\
+               \  \_\,``,   ` , ,  /  |         )         _,/
+                \  '  `  ,_ _`_,-,<._.<        /         /
+                 ', `>.,`  `  `   ,., |_      |         /
+                   \/`  `,   `   ,`  | /__,.-`    _,   `\
+               -,-..\  _  \  `  /  ,  / `._) _,-\`       \
+                \_,,.) /\    ` /  / ) (-,, ``    ,        |
+               ,` )  | \_\       '-`  |  `(               \
+              /  /```(   , --, ,' \   |`<`    ,            |
+             /  /_,--`\   <\  V /> ,` )<_/)  | \      _____)
+       ,-, ,`   `   (_,\ \    |   /) / __/  /   `----`
+      (-, \           ) \ ('_.-._)/ /,`    /
+      | /  `          `/ \\ V   V, /`     /
+   ,--\(        ,     <_/`\\     ||      /
+  (   ,``-     \/|         \-A.A-`|     /
+ ,>,_ )_,..(    )\          -,,_-`  _--`
+(_ \|`   _,/_  /  \_            ,--`
+ \( `   <.,../`     `-.._   _,-`
+FIMDAIMAGEM
 neblina1
 Seguir o caminho da escuridão Morgano decide seguir um caminho sombrio e misterioso que parece levar a um reino subterrâneo. Ele é guardado por criaturas assustadoras e perigosas. No entanto, há boatos de que grandes tesouros estão escondidos lá. Você deseja enfrentar os perigos e desafios em busca de riquezas?
 personagem1
@@ -16,7 +75,32 @@ Você confia na sabedoria dos seres pacificos e sabios da cidade flutuante. Eles
 personagem
 -20
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+    .-""-.
+      /-.{}  \
+      | _\__.|
+      \/^)^ \/
+       \ =  /
+  .---./`--`\.--._
+ /     `;--'`     \
+;        /`       ;
+|       |*        |
+/   |   |     |    \
+|    \  |*    /    |
+\_   |\_|____/|  __/
+  \__//======\\__/
+  / //_      _\\ \
+  -'  |`""""`|  `-
+      |  L   |
+      >_ || _<
+      |  ||  |
+      |  ||  |
+     /   ||   \
+    /    /,    \
+     `|"|`"|"|"`
+     /  )  /  )  nic/jgs
+    /__/  /__/
+FIMDAIMAGEM
 sabedoria1
 Você escolhe aprender com o eremita sábio e mergulha em uma jornada interna de autoconhecimento. Ele o ensina sobre o equilíbrio entre luz e escuridão, poder e compaixão. Quando você se sente pronto, ele indica o caminho para o Olho de Oráculo. Agora, surge uma nova diante de você
 personagem3
@@ -42,7 +126,7 @@ personagem2
 
 CAPITULO
 luz13
-florio decide usar o poder do Olho de Oráculo para realizar um desejo pessoal egoísta.\n"+ "No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza. Final: Sozinho e corrompido.  
+florio decide usar o poder do Olho de Oráculo para realizar um desejo pessoal egoísta. No entanto, o poder corrompe sua mente e coração, levando você a um caminho de isolamento e tristeza. Final: Sozinho e corrompido.  
 personagem2
 -10
 
@@ -103,5 +187,4 @@ sabedoria1
 Renunciar
 sabedoria13
 
-10
 
