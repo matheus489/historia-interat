@@ -37,10 +37,11 @@ public class Gerenciador {
             boolean capimagem = capitulo instanceof Capituloimagem;
         if(capimagem){
             Capituloimagem capituloimagem = (Capituloimagem) capitulo;
-this.Caixadeentrada.setText(capituloimagem.getTexto()+"\n"+"Seu nome é:"+capituloimagem.personagem.getNome() + "\n" +"Sua Energia é:" +capituloimagem.personagem.getEnergia()+ "\n" + capituloimagem.getImagem()+"\n");
+            this.Caixadeentrada.setText(capituloimagem.getTexto()+"\n"+"Seu nome é:"+capituloimagem.personagem.getNome() + "\n" +"Sua Energia é:" +capituloimagem.personagem.getEnergia()+ "\n" + capituloimagem.getImagem()+"\n");
         }else{
             this.Caixadeentrada.setText(capitulo.getTexto()+"\n"+"Seu nome é:"+capitulo.personagem.getNome() + "\n" +"Sua Energia é:" +capitulo.personagem.getEnergia()+ "\n");
         }
+        capitulo.alteraçãoEnergia1();
         for (Escolha1 escolha : capitulo.getEscolhas()) {
             Button botao = new Button(escolha.getTexto());
             
@@ -49,8 +50,9 @@ this.Caixadeentrada.setText(capituloimagem.getTexto()+"\n"+"Seu nome é:"+capitu
                 public void handle(ActionEvent event) {
                     Capitulo1 proximoCapitulo = escolha.getProximo();
                     EscolhasVbox.getChildren().clear();
-            mostrar(proximoCapitulo);
+                 mostrar(proximoCapitulo);
                 }
+
                 
             });
             this.EscolhasVbox.getChildren().add(botao);

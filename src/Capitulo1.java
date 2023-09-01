@@ -55,6 +55,9 @@ public class Capitulo1 {
           System.out.println("Você digitou errado, tente novamente!");
        }
     }
+    public void alteraçãoEnergia1() {
+        this.personagem.alteraçãoEnergia1(this.Alteraçãodeenergia);
+    }
 
     public Scanner getEscanar() {
         return escaneador;
