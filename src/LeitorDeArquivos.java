@@ -69,7 +69,7 @@ public class LeitorDeArquivos {
             
         private void LerCapituloImagem(HashMap<String, Capitulo1> capitulo1s, Scanner leitor,
             HashMap<String, personagem> persongens) {
-                String linha = leitor.nextLine();
+            String linha = leitor.nextLine();
             String imagem = "";
             while (!linha.equalsIgnoreCase("FIMDAIMAGEM")) {
                 imagem +=  "\n" + linha;

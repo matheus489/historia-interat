@@ -95,6 +95,10 @@ public class Capitulo1 {
         this.Alteraçãodeenergia = qtdfeliz;
     }
 
+    public String getTexto() {
+        return texto;
+    }
+
 }
 
         

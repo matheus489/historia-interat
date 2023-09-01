@@ -22,5 +22,10 @@ System.out.println(escolha.getTexto());
 }
 
 
-}}
+}
+
+public String getImagem() {
+return this.imagem;
+}
+}
 
