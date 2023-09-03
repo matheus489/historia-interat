@@ -36,13 +36,17 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gerenciador">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Button fx:id="Butãoiniciar" layoutX="566.0" layoutY="314.0" mnemonicParsing="false" onAction="#iniciar" text="Iniciar " />
-            <TextArea fx:id="Caixadeentrada" layoutX="18.0" layoutY="14.0" prefHeight="227.0" prefWidth="603.0" wrapText="true" AnchorPane.bottomAnchor="152.8" AnchorPane.rightAnchor="18.799999999999955" AnchorPane.topAnchor="20.0" />
+            <TextArea fx:id="Caixadeentrada" layoutX="18.0" layoutY="14.0" prefHeight="227.0" prefWidth="603.0" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font></TextArea>
             <VBox fx:id="EscolhasVbox" layoutX="16.0" layoutY="245.0" prefHeight="138.0" prefWidth="539.0" />
       </children>
     </AnchorPane>
